@@ -12,7 +12,6 @@ def main():
     text = data['description']
     model = Model()
     generated_images = model.generate(text)
-    print(generated_images.shape)
     for i in range(len(generated_images)):
         imageio.imwrite('/results/{}.jpg'.format(i), generated_images[i, :, :, :])
 
