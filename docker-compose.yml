@@ -4,8 +4,6 @@ services:
     generate:
         image: ssense-challenge-template
         build: .
-        environment:
-          DOTENV_FILE: /srv/app/docker/config.env
         volumes:
             - .:/srv/app
         stdin_open: true
