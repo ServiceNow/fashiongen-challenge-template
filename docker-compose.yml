@@ -6,5 +6,6 @@ services:
         build: .
         volumes:
             - .:/srv/app
+            - ./results:/results
         stdin_open: true
         tty: true
