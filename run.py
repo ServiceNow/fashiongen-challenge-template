@@ -4,7 +4,7 @@ import pandas as pd
 from model import Model
 
 
-INPUT_PATH = 'data/dummy_input.csv'
+INPUT_PATH = '/data/dummy_input.csv'
 
 
 def main():

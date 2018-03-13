@@ -5,6 +5,7 @@ services:
         image: ssense-challenge-template
         build: .
         volumes:
+            - ./data:/data
             - .:/srv/app
             - ./results:/results
         stdin_open: true
