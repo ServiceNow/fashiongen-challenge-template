@@ -27,7 +27,6 @@ class Model(object):
         self.generator = get_dcgan_generator()
         self.input_shape = self.generator.input_shape
         self.output_shape = self.generator.output_shape
-        print(self.input_shape, self.output_shape)
 
     def generate(self, size=32, text=None):
         z = np.random.uniform(-1, 1, (size, ) + self.input_shape[1:])
