@@ -10,8 +10,8 @@ INPUT_PATH = '/data/dummy_input.csv'
 def main():
     data = pd.read_csv(INPUT_PATH)
     text = data['description']
-    model = Model()
-    generated_images = model.generate(text)
+    generator = Model()
+    generated_images = generator.generate(32, text)
     for i in range(len(generated_images)):
         imageio.imwrite('/results/{}.jpg'.format(i), generated_images[i, :, :, :])
 

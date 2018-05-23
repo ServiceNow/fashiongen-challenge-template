@@ -41,7 +41,7 @@ RUN add-apt-repository universe && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN pip install -U pip && pip install tox detox
+RUN pip install -U pip
 
 RUN apt-get update --fix-missing && apt-get install -y libopenblas-dev \
     libblas-dev liblapack-dev && \

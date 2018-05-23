@@ -2,3 +2,5 @@ imageio
 numpy
 scipy
 pandas
+tensorflow
+keras
