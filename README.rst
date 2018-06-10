@@ -14,6 +14,6 @@ To run your project use the `generate` service with `docker-compose`::
     docker-compose run --rm generate
 
 You will find the results in the `results` folder.
-If the images in the `results` folder have the sufficient quality for you to submit, follow the steps from the `Quickstart_` in the wiki to get started.
+If the images in the `results` folder have the sufficient quality for you to submit, follow the steps from the Quickstart_ in the wiki to get started.
 
-.. _`Quickstart`: https://github.com/ElementAI/fashiongen-challenge-template/wiki
+.. _Quickstart: https://github.com/ElementAI/fashiongen-challenge-template/wiki
