@@ -62,9 +62,8 @@ RUN pip2.7 install --no-cache-dir -r /tmp/requirements.txt && \
 
 ENV LANG C.UTF-8
 
-WORKDIR /app
+WORKDIR /srv/app
 
 COPY . /srv/app
 
-CMD cp -rT /srv/app /app/ && \
-    python run.py
+CMD python run.py
