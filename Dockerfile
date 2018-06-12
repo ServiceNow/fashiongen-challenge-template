@@ -62,9 +62,13 @@ RUN pip2.7 install --no-cache-dir -r /tmp/requirements.txt && \
 
 ENV LANG C.UTF-8
 
-WORKDIR /app
+# Download model weights
+RUN mkdir /temp_model && \
+    cd /temp_model && \
+    wget 'https://github.com/tboquet/deep-learning-models/releases/download/v0.1alpha/dcgan_generator_128_128.h5'
+
+WORKDIR /srv/app
 
 COPY . /srv/app
 
-CMD cp -rT /srv/app /app/ && \
-    python run.py
+CMD python run.py
